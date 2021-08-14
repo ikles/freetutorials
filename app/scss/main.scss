@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$ff2: font-family: 'Roboto', sans-serif;
+$ff3: font-family: 'Bebas Neue', cursive;
+
+
+@import "_mnu.scss";
+@import "_vars.scss";
+
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;  
+  overflow: hidden;
+  display: flex;    
+  flex-direction: column;    
+  min-height: 100vh;
+}
+
+.contain {
+  
+}
+
+* {
+  
+}
+
+.row {
+  > div {
+    min-height: 50px;
+    outline: 1px solid #ccc;
+  }
+}
+
+.bd-example-row-flex-cols .row {
+    min-height: 10rem;
+    background-color: rgba(255,0,0,0.1);
+    outline: 1px solid #000
+}
+
+@import "_media.scss";
+@import "_hides.scss";
+@import "_after-styless";
