@@ -28,7 +28,7 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-  $("#phone_1").mask("+7 (999) 999-99-99");
+  //$("#phone_1").mask("+7 (999) 999-99-99");
 
 //Add Inactive Class To All Accordion Headers
 $('.accordion-header').toggleClass('inactive-header');
@@ -87,55 +87,11 @@ $('.accordion-header').toggleClass('inactive-header');
 
   });
 
-  $("#calc-distance").slider({
-    range: "min",
-    step: 50000,
-    value: 750000,
-    min: 0,
-    max: 10000000,
-    slide: function( event, ui ) {
-      $( "#amount-distance" ).val( ui.value.toLocaleString() );
-    }
-  });
-  $( "#amount-distance" ).val( $( "#calc-distance" ).slider( "value" ).toLocaleString() );
-
-  $("#calc-distance-2").slider({
-    range: "min",
-    step: 50000,
-    value: 0,
-    min: 0,
-    max: 10000000,
-    slide: function( event, ui ) {
-      $( "#amount-distance-2" ).val( ui.value.toLocaleString() );
-    }
-  });
-  $( "#amount-distance-2" ).val( $( "#calc-distance-2" ).slider( "value" ).toLocaleString() );
 
 
 
-  $('.carous-items').slick({  
 
 
-   dots: true,
-   infinite: true,
-   speed: 300,
-   slidesToShow: 1,
-   centerMode: true,
-   variableWidth: true
- });
-
-/*
-  infinite: true,
-  speed: 300,
-  slidesToShow: 10,
-  slidesToScroll: 1,
-  centerMode: true,
-  autoplay: false,
-  variableWidth: true,
-  autoplaySpeed: 4000,
-  cssEase: 'ease-out',
-  dots: true
-  */
 
 
 
@@ -154,7 +110,10 @@ $('.accordion-header').toggleClass('inactive-header');
 
 
 
-  $('select').fancySelect();
+  $('select').select2({
+  minimumResultsForSearch: -1
+}); 
+
 
 }); //ready
 
