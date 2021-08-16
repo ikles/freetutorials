@@ -19,78 +19,339 @@
 <body>
 
   <div class="wrapper">
-
+<div class="info">
+  <div class="contain">
+    <div class="info-w">
+      <p>Все курсы SkillBox на 7 дней бесплатно. <a href="#">Подробности по ссылке.</a></p>
+      <span class="info-close"></span>
+    </div>
+  </div>
+</div>
     <header class="header">
+      <div class="contain">
+        <div class="top-w">
+          <a href="#" class="logo">
+            <div class="logo-txt-1">Free Tutorials</div>
+            <div class="logo-txt-2">Каталог бесплатных it-курсов</div>
+          </a>
+
+          <div class="top-col-3">
+            <div class="col-mnu">
+              <div class="hidden-mnu" wfd-invisible="true">
+                <a href="#" class="toggle-mnu" wfd-invisible="true"><span></span></a>
+              </div>
+
+              <ul class="top-mnu">
+                <li><a href="#">Курсы</a></li>
+                <li><a href="#">Онлайн-школы</a></li>
+                <li><a href="#">Публикации</a></li>
+                <li><a href="#">Отзывы</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </header>
 
-    <div class="contain">
-
-      <div class="categ-menu-w">
-        <ul class="categ-menu-ul">
-          <li><a href="#">Программирование</a></li>
-          <li><a href="#">Управление</a></li>
-          <li><a href="#">Дизайн</a></li>
-          <li><a href="#">Маркетинг</a></li>
-          <li><a href="#">Аналитика</a></li>
-          <li><a href="#">Контент</a></li>
-        </ul>
-      </div>
-
-
-      <div class="every-w">
-        <div class="every-col-1">
-          <div class="every-txt-1">640</div>
-          <div class="every-txt-2">Курсов по разным направлениям подготовки</div>
+    <section class="section categ-menu">
+      <div class="contain">
+        <div class="categ-menu-w">
+          <ul class="categ-menu-ul">
+            <li><a href="#">Программирование</a></li>
+            <li><a href="#">Управление</a></li>
+            <li><a href="#">Дизайн</a></li>
+            <li><a href="#">Маркетинг</a></li>
+            <li><a href="#">Аналитика</a></li>
+            <li><a href="#">Контент</a></li>
+          </ul>
         </div>
-        <div class="every-col-2">
-          <h1>Курсы ведущих онлайн школ России</h1>
-          <div class="every-txt-4">для каждого без ограничений</div>
+      </div><!--contain-->
+    </section>
+    <section class="section every">
+      <div class="contain">
+        <div class="every-w">
+          <div class="every-col-1">
+            <div class="every-txt-1">640</div>
+            <div class="every-txt-2">Курсов по разным направлениям подготовки</div>
+          </div>
+          <div class="every-col-2">
+            <h1>Курсы ведущих онлайн школ России</h1>
+            <div class="every-txt-4">для каждого без ограничений</div>
+          </div>
+          <div class="every-btn-o-w"><a href="#" class="btn-o">Учиться</a></div>
         </div>
-        <div class="every-btn-o-w"><a href="#" class="btn-o">Учиться</a></div>
       </div>
-
-      <div class="all-sch-w _row10">
-        @@include('var/_teaser1.html',{
-          "title":"Skillbox",
-          "course":"Дизайн, маркетинг, программирование, аналитика",
-          "count":"124 курса"
-        }) 
-         @@include('var/_teaser1.html',{
-          "title":"Geek Brains",
-          "course":"Дизайн, маркетинг, программирование, аналитика",
-          "count":"15 курсов"
-        })   
+    </section>    
+    <section class="section all-sch">
+      <div class="contain">
+        <div class="all-sch-w row10">
+          <div class="col-33-10 all-sch-col">
             @@include('var/_teaser1.html',{
-          "title":"itProger",
-          "course":"Дизайн, маркетинг, программирование, аналитика",
-          "count":"2 курса"
-        })  
-        @@include('var/_teaser1.html',{
-          "title":"Skillbox",
-          "course":"Дизайн, маркетинг, программирование, аналитика",
-          "count":"124 курса"
-        }) 
-        @@include('var/_teaser1.html',{
-          "title":"Skillbox",
-          "course":"Дизайн, маркетинг, программирование, аналитика",
-          "count":"124 курса"
-        }) 
-        @@include('var/_teaser1.html',{
-          "title":"Skillbox",
-          "course":"Дизайн, маркетинг, программирование, аналитика",
-          "count":"124 курса"
-        })      
+              "title":"Skillbox",
+              "course":"Дизайн, маркетинг,<br>программирование, аналитика",
+              "count":"124 курса"
+            }) 
+          </div>
+          <div class="col-33-10 all-sch-col">
+            @@include('var/_teaser1.html',{
+              "title":"Geek Brains",
+              "course":"Дизайн, маркетинг,<br>программирование, аналитика",
+              "count":"15 курсов"
+            })   
+          </div>
+          <div class="col-33-10 all-sch-col">
+            @@include('var/_teaser1.html',{
+              "title":"itProger",
+              "course":"Дизайн, маркетинг,<br>программирование, аналитика",
+              "count":"2 курса"
+            })  
+          </div>
+          <div class="col-33-10 all-sch-col">
+            @@include('var/_teaser1.html',{
+              "title":"Skillbox",
+              "course":"Дизайн, маркетинг,<br>программирование, аналитика",
+              "count":"124 курса"
+            }) 
+          </div>
+          <div class="col-33-10 all-sch-col">
+            @@include('var/_teaser1.html',{
+              "title":"Skillbox",
+              "course":"Дизайн, маркетинг,<br>программирование, аналитика",
+              "count":"124 курса"
+            }) 
+          </div>
+          <div class="col-33-10 all-sch-col">
+            @@include('var/_teaser1.html',{
+              "title":"Skillbox",
+              "course":"Дизайн, маркетинг,<br>программирование, аналитика",
+              "count":"124 курса"
+            })      
+          </div>
+        </div>
+        <div class="all-sch-btn-w"><a href="#" class="btn">Все школы</a></div>
+      </section>
+
+
+      <section class="section all-cours">
+        <div class="contain">
+          <p class="all-cours-p"><b>Пройдите лучшие курсы подготовленные онлайн-школами, 
+          компаниями и индивидуальными авторами</b></p>
+          <div class="all-cours-w row10">
+
+            <div class="all-cours-col col-33-10">
+             @@include('var/_teaser2.html',{
+              "title":"Видеокурс",
+              "course":"Веб-разработка. Быстрый старт.",
+              "school":"GeekBrains",
+              "less":"13 занятий",
+              "hour":"23 часа",
+              "cat":"Создание сайтов, Web-разработка"
+            })
+          </div>
+          <div class="all-cours-col col-33-10">
+            @@include('var/_teaser2.html',{
+              "title":"Вводный курс",
+              "course":"Вводный курс по Unreal Engine 4",
+              "school":"UNREALSKILLS",
+              "less":"1 занятие",
+              "hour":"",
+              "cat":"Создание сайтов, Web-разработка"
+            })
+          </div>
+          <div class="all-cours-col col-33-10">
+           @@include('var/_teaser2.html',{
+            "title":"Видеокурс <b></b> Текстовой материал",
+            "course":"Уроки C++",
+            "school":"itProger",
+            "less":"",
+            "hour":"",
+            "cat":"Разработка на C++"
+          }) 
+        </div>
+        <div class="all-cours-col col-33-10">
+          @@include('var/_teaser2.html',{
+            "title":"Видеокурс",
+            "course":"Веб-разработка. Быстрый старт.",
+            "school":"Онлайн-школа Евгения Вергуса",
+            "less":"13 занятий",
+            "hour":"23 часа",
+            "cat":"Создание сайтов, Web-разработка"
+          })
+        </div>
+        <div class="all-cours-col col-33-10">
+          @@include('var/_teaser2.html',{
+            "title":"Видеокурс",
+            "course":"Программирование на языке C++",
+            "school":"Stepik",
+            "less":"41 занятие",
+            "hour":"",
+            "cat":"Разработка С++"
+          })
+        </div>
+        <div class="all-cours-col col-33-10">
+          @@include('var/_teaser2.html',{
+            "title":"Видеокурс",
+            "course":"Основы Python",
+            "school":"SkillBox",
+            "less":"13 занятий",
+            "hour":"600 часов",
+            "cat":"Python-разработка"
+          })
+        </div>
+
       </div>
+      <div class="all-cours-btn-w">
+        <a href="#" class="btn">Каталог</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section public">    
+    <div class="contain">
+      <h2>Публикации</h2>
+      <div class="public-w row20">
+        <div class="public-col col-33-20">
+          <div class="public-item">
+            <a href="#" class="public-span-1">У скиллбокс вышел новый бесплатный курс</a>
+            <span class="public-span-2">17.06.2021</span>
+          </div>          
+        </div>
+        <div class="public-col col-33-20">          
+          <div class="public-item">
+            <a href="#" class="public-span-1">На все платные курсы Нетологии скидка 30%</a>
+            <span class="public-span-2">17.06.2021</span>
+          </div>
+        </div>
+        <div class="public-col col-33-20">          
+          <div class="public-item">
+            <a href="#" class="public-span-1">У скиллбокс вышел новый бесплатный курс</a>
+            <span class="public-span-2">17.06.2021</span>
+          </div>
+        </div>
+        <div class="public-col col-33-20">
+          <div class="public-item">
+            <a href="#" class="public-span-1">У скиллбокс вышел новый бесплатный курс</a>
+            <span class="public-span-2">17.06.2021</span>
+          </div>
+        </div>
+        <div class="public-col col-33-20">
+          <div class="public-item">
+            <a href="#" class="public-span-1">На все платные курсы Нетологии скидка 30%</a>
+            <span class="public-span-2">17.06.2021</span>
+          </div>
+        </div>
+        <div class="public-col col-33-20">
+          <div class="public-item">
+            <a href="#" class="public-span-1">У скиллбокс вышел новый бесплатный курс</a>
+            <span class="public-span-2">17.06.2021</span>
+          </div>
+        </div>
+
+        <div class="public-btn-w"><a href="#" class="btn">Все публикации</a></div>
+      </section>
 
 
 
-    </div><!--contain-->
+      <section class="section rev">
+        <div class="contain">
+          <h2>Отзывы</h2>
+          <div class="rev-w row20">
+            <div class="col-33-20">
+             @@include('var/_rev.html',{
+              "title":"Java. Уровень 1",
+              "name":"Михаил Морозов",
+              "date":"17 июля 2021 г.",
+              "text":"Курс Java. Уровень 1 был очень насыщенный, много информации получали на каждом уроке. Не скажу, что курс дался мне легко, но было интересно. Преподаватель Александр Гудков доступно объяснял сложные вещи. Уроки проходили сразу на бою, Александр показывал и объяснял всё в программе, для лучшего. Курс Java. Уровень 1 был очень насыщенный, много информации получали на каждом уроке. Не скажу, что курс дался мне легко, но было интересно. Преподаватель Александр Гудков доступно объяснял сложные вещи. Уроки проходили сразу на бою, Александр показывал и объяснял всё в программе, для лучшего",
+              "more": "Подробнее"
+            })
+          </div>
+          <div class="col-33-20">
+           @@include('var/_rev.html',{
+            "title":"Программирование на языке C++",
+            "name":"Стройнов Илья",
+            "date":"17 июля 2021 г.",
+            "text":"весьма противоречивый курс, есть как интересная инфа, так и неполный материал, 'хакерские' задачки, которые вы больше никогда не встретите. Требуется постоянный самостоятельный поиск информации. Для новичков в программирование - плохой выбор",
+            "more": ""
+          })
+        </div>
+        <div class="col-33-20">
+         @@include('var/_rev.html',{
+          "title":"Основы Python",
+          "name":"Стройнов Илья",
+          "date":"17 июля 2021 г.",
+          "text":"Я начинал учить Python с нуля самостоятельно. Искал уроки на Ютубе, качал учебники с рутрекера, записывался на все вебинары и был очень внимательным. Но ничего не получалось. Я в какой-то момент просто зашел в тупик и перестал понимать, что вообще дальше делать. Как бы я не старался выучить. Я начинал учить Python с нуля самостоятельно. Искал уроки на Ютубе, качал учебники с рутрекера, записывался на все вебинары и был очень внимательным. Но ничего не получалось. Я в какой-то момент просто зашел в тупик и перестал понимать, что вообще дальше делать. Как бы я не старался выучить. ",
+          "more": "Подробнее"
+        })
+      </div>
+    </div>
+    <div class="rev-butt-w">
+      <a href="#" class="btn">Все отзывы</a>
+    </div>
+  </div>
+</section>
 
-  </div><!--wrapper-->
 
-  <script src="js/jquery-3.4.1.min.js"></script>      
-  <script src="js/common.js"></script>
+
+<footer class="foot">  
+  <div class="foot-top">
+    <div class="contain">
+      <div class="foot-top-w">
+        <div class="foot-col-1">
+          <a href="#" class="foot-logo">Free Tutorials</a>
+          <ul class="foot-ul">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Условия использования</a></li>
+          </ul>
+        </div>
+        <div class="foot-col-2">
+          <ul class="foot-ul">
+            <li><a href="#">Курсы</a></li>
+            <li><a href="#">Публикации</a></li>
+            <li><a href="#">Онлайн школы</a></li>
+          </ul>
+        </div>
+        <div class="foot-col-3">
+          <ul class="foot-ul">
+            <li><a href="#">Добавить свой курс</a></li>
+            <li><a href="#">Карта сайта</a></li>
+            <li><a href="#">Политика конфендициальности</a></li>
+          </ul>
+        </div>
+        <div class="foot-col-4">
+          <ul class="foot-ul">
+            <li>Количество курсов <a class="blue" href="#">640</a></li>
+            <li>Количество школ <a class="blue" href="#">120</a></li>
+            <li>Отзывы <a class="blue" href="#">28</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-dow">
+    <div class="contain"><div class="foot-dow-txt">Информация о курсах собрана из открытых источниках и не является публичной офертой</div></div>
+  </div>
+
+
+</footer>
+
+<div class="modal-overlay modal-overlay_1">  
+ <div class="modal-form__layout"></div>
+ <div class="modal-form__block">     
+  <a href="#" class="pop-close"></a>
+  <div class="rev-it">
+
+  </div>
+</div>
+</div><!--modal-overlay-->
+
+
+
+
+</div><!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/common.js"></script>
 </body>
 </html>
 
