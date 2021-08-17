@@ -1,0 +1,72 @@
+@@include('var/_head.html',{
+  "title":"5. Дочерняя категория"
+})
+<body>  
+  <div class="wrapper wrapper-4">
+
+    @@include('var/_header.html')
+
+
+
+    <div class="pubs">
+      <div class="contain">
+
+<h1>Публикации</h1>
+        <div class="pubs-w">
+
+
+          @@include('var/_new.html',{
+            "img":"pub-1.jpg",
+            "date":"17.06.2021",
+            "text":"36 бесплатных бизнес-курсов для начинающих предпринимателей"})
+
+            @@include('var/_new.html',{
+              "img":"pub-2.jpg",
+              "date":"12.06.2021",
+              "text":"Аналитика данных: как построить дашборд в Excel"})
+
+              @@include('var/_new.html',{
+                "img":"pub-3.jpg",
+                "date":"3.06.2021",
+                "text":"Финансовый аналитик, менеджер, консультант и директор по финансам: в чём разница между этими профессиями"})
+
+                @@include('var/_new.html',{
+                  "img":"pub-1.jpg",
+                  "date":"17.06.2021",
+                  "text":"36 бесплатных бизнес-курсов для начинающих предпринимателей"})
+
+                  @@include('var/_new.html',{
+                    "img":"pub-2.jpg",
+                    "date":"12.06.2021",
+                    "text":"Аналитика данных: как построить дашборд в Excel"})
+
+                  </div>
+                  @@include('var/_pagin.html')                  
+                </div>
+              </div>
+
+
+
+              @@include('var/_footer.html')
+
+              <div class="modal-overlay modal-overlay_1">  
+               <div class="modal-form__layout"></div>
+               <div class="modal-form__block">     
+                <a href="#" class="pop-close"></a>
+                <div class="rev-it">
+
+                </div>
+              </div>
+            </div><!--modal-overlay-->
+
+
+
+
+          </div><!--wrapper-->
+
+          <script src="js/jquery-3.4.1.min.js"></script>      
+          <script src="js/select2.min.js"></script>
+          <script src="js/common.js"></script>
+        </body>
+        </html>
+

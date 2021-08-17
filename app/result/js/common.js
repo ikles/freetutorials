@@ -1,27 +1,41 @@
 jQuery(document).ready(function( $ ) {
 
-  $(".toggle-mnu").click(function() {
+  $(".toggle-mnu1").click(function() {
     $(this).toggleClass("on");
-    $(".top-mnu").slideToggle();
+    $(".top-mnu1").slideToggle();
     return false;
   });
 
   $('body').click(function () {
-    if( $(".toggle-mnu").hasClass("on") ){
-      $(".toggle-mnu").removeClass("on");
-      $(".top-mnu").fadeOut();
+    if( $(".toggle-mnu1").hasClass("on") ){
+      $(".toggle-mnu1").removeClass("on");
+      $(".top-mnu1").fadeOut();
     }
   });
 
 
-  $(".top-mnu").click(function (e) {
+  $(".toggle-mnu2").click(function() {
+    $(this).toggleClass("on");
+    $(".top-mnu2").slideToggle();
+    return false;
+  });
+
+  $('body').click(function () {
+    if( $(".toggle-mnu2").hasClass("on") ){
+      $(".toggle-mnu2").removeClass("on");
+      $(".top-mnu2").fadeOut();
+    }
+  });
+
+
+  $(".top-mnu, .info-w, .categ-menu-ul").click(function (e) {
     e.stopPropagation();
   });
 
 
   /************************************/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -32,8 +46,7 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
-
-});
+});*/
 
 /************************************/
 

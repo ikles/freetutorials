@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">  
   <!--meta name="viewport" content="width=1200px"-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Главная</title>      
+  <title>1. Главная</title>  
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,58 +18,59 @@
 <![endif]-->
 </head>
 <body>
-
-  <div class="wrapper">
-<div class="info">
-  <div class="contain">
-    <div class="info-w">
-      <p>Все курсы SkillBox на 7 дней бесплатно. <a href="#">Подробности по ссылке.</a></p>
-      <span class="info-close"></span>
-    </div>
-  </div>
-</div>
-    <header class="header">
+  
+  <div class="wrapper wrapper-1">
+    <div class="info">
       <div class="contain">
-        <div class="top-w">
-          <a href="#" class="logo">
-            <div class="logo-txt-1">Free Tutorials</div>
-            <div class="logo-txt-2">Каталог бесплатных it-курсов</div>
-          </a>
-
-          <div class="top-col-3">
-            <div class="col-mnu">
-              <div class="hidden-mnu" wfd-invisible="true">
-                <a href="#" class="toggle-mnu" wfd-invisible="true"><span></span></a>
-              </div>
-
-              <ul class="top-mnu">
-                <li><a href="#">Курсы</a></li>
-                <li><a href="#">Онлайн-школы</a></li>
-                <li><a href="#">Публикации</a></li>
-                <li><a href="#">Отзывы</a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="info-w">
+          <p>Все курсы SkillBox на 7 дней бесплатно. <a href="#">Подробности по ссылке.</a></p>
+          <span class="info-close"></span>
         </div>
       </div>
-
-    </header>
-
-    <section class="section categ-menu">
-      <div class="contain">
-        <div class="categ-menu-w">
-          <ul class="categ-menu-ul">
-            <li><a href="#">Программирование</a></li>
-            <li><a href="#">Управление</a></li>
-            <li><a href="#">Дизайн</a></li>
-            <li><a href="#">Маркетинг</a></li>
-            <li><a href="#">Аналитика</a></li>
-            <li><a href="#">Контент</a></li>
+    </div>
+    <header class="header">
+  <div class="contain">
+    <div class="top-w">
+      <a href="index.html" class="logo">
+        <div class="logo-txt-1">Free Tutorials</div>
+        <div class="logo-txt-2">Каталог бесплатных it-курсов</div>
+      </a>
+      <div class="top-col-3">
+        <div class="col-mnu">
+          <div class="hidden-mnu hidden-mnu1" wfd-invisible="true">
+            <a href="#" class="toggle-mnu toggle-mnu1" wfd-invisible="true"><span></span></a>
+          </div>
+          <ul class="top-mnu top-mnu1">
+            <li><a href="#">Курсы</a></li>
+            <li><a href="#">Онлайн-школы</a></li>
+            <li><a href="#">Публикации</a></li>
+            <li><a href="#">Отзывы</a></li>
           </ul>
         </div>
-      </div><!--contain-->
-    </section>
-    <section class="section every">
+      </div>
+    </div>
+  </div>
+</header>
+<div class="categ-menu">
+  <div class="contain">
+    <div class="categ-menu-w">
+
+      <div class="hidden-mnu hidden-mnu2" wfd-invisible="true">
+        <a href="#" class="toggle-mnu toggle-mnu2" wfd-invisible="true"><span></span></a>
+      </div>
+      <span class="show-991 cat-txt">Категории</span>
+      <ul class="categ-menu-ul top-mnu2">
+        <li><a href="#">Программирование</a></li>
+        <li><a href="#">Управление</a></li>
+        <li><a href="#">Дизайн</a></li>
+        <li><a href="#">Маркетинг</a></li>
+        <li><a href="#">Аналитика</a></li>
+        <li><a href="#">Контент</a></li>
+      </ul>
+    </div>
+  </div><!--contain-->
+</div>
+    <div class="every">
       <div class="contain">
         <div class="every-w">
           <div class="every-col-1">
@@ -82,8 +84,8 @@
           <div class="every-btn-o-w"><a href="#" class="btn-o">Учиться</a></div>
         </div>
       </div>
-    </section>    
-    <section class="section all-sch">
+    </div>    
+    <section class="all-sch">
       <div class="contain">
         <div class="all-sch-w row10">
           <div class="col-33-10 all-sch-col">
@@ -389,7 +391,7 @@
         <div class="contain">
           <h2>Отзывы</h2>
           <div class="rev-w row20">
-            <div class="col-33-20">
+            <div class="rev-col col-33-20">
              <div class="rev-it">
     <a href="#" class="rev-view">Java. Уровень 1</a>
     <div class="rev-name-w">
@@ -418,7 +420,7 @@
     </div>
 </div>
           </div>
-          <div class="col-33-20">
+          <div class="rev-col col-33-20">
            <div class="rev-it">
     <a href="#" class="rev-view">Программирование на языке C++</a>
     <div class="rev-name-w">
@@ -447,7 +449,7 @@
     </div>
 </div>
         </div>
-        <div class="col-33-20">
+        <div class="rev-col col-33-20">
          <div class="rev-it">
     <a href="#" class="rev-view">Основы Python</a>
     <div class="rev-name-w">
@@ -490,7 +492,7 @@
     <div class="contain">
       <div class="foot-top-w">
         <div class="foot-col-1">
-          <a href="#" class="foot-logo">Free Tutorials</a>
+          <a href="index.html" class="foot-logo">Free Tutorials</a>
           <ul class="foot-ul">
             <li><a href="#">О проекте</a></li>
             <li><a href="#">Условия использования</a></li>
@@ -523,8 +525,6 @@
   <div class="foot-dow">
     <div class="contain"><div class="foot-dow-txt">Информация о курсах собрана из открытых источниках и не является публичной офертой</div></div>
   </div>
-
-
 </footer>
 
 <div class="modal-overlay modal-overlay_1">  
@@ -543,6 +543,7 @@
 </div><!--wrapper-->
 
 <script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/select2.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>

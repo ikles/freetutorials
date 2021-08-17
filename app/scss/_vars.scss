@@ -35,6 +35,15 @@ body.active .wrapper {
     display: none;
 }
 
+.show-991 {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .show-991 {
+    display: block;
+}
+}
 @media (max-width: 1299px) {
     .show-1299 {
         display: block;
@@ -206,24 +215,9 @@ body.active .wrapper {
     overflow: visible;
 }
 
-.top {
-    position: relative;
-    height: 50px;
-    overflow: visible;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-}
 
-.top-mnu {
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-}
 
-.top-mnu li {
-    margin-right: 15px;
-}
+
 
 .form-1 {
     margin-top: 40px;

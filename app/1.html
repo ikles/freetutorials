@@ -1,74 +1,19 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">  
-  <!--meta name="viewport" content="width=1200px"-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Главная</title>      
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
+@@include('var/_head.html',{
+  "title":"1. Главная"
+  })
 <body>
-
-  <div class="wrapper">
-<div class="info">
-  <div class="contain">
-    <div class="info-w">
-      <p>Все курсы SkillBox на 7 дней бесплатно. <a href="#">Подробности по ссылке.</a></p>
-      <span class="info-close"></span>
-    </div>
-  </div>
-</div>
-    <header class="header">
+  
+  <div class="wrapper wrapper-1">
+    <div class="info">
       <div class="contain">
-        <div class="top-w">
-          <a href="#" class="logo">
-            <div class="logo-txt-1">Free Tutorials</div>
-            <div class="logo-txt-2">Каталог бесплатных it-курсов</div>
-          </a>
-
-          <div class="top-col-3">
-            <div class="col-mnu">
-              <div class="hidden-mnu" wfd-invisible="true">
-                <a href="#" class="toggle-mnu" wfd-invisible="true"><span></span></a>
-              </div>
-
-              <ul class="top-mnu">
-                <li><a href="#">Курсы</a></li>
-                <li><a href="#">Онлайн-школы</a></li>
-                <li><a href="#">Публикации</a></li>
-                <li><a href="#">Отзывы</a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="info-w">
+          <p>Все курсы SkillBox на 7 дней бесплатно. <a href="#">Подробности по ссылке.</a></p>
+          <span class="info-close"></span>
         </div>
       </div>
-
-    </header>
-
-    <section class="section categ-menu">
-      <div class="contain">
-        <div class="categ-menu-w">
-          <ul class="categ-menu-ul">
-            <li><a href="#">Программирование</a></li>
-            <li><a href="#">Управление</a></li>
-            <li><a href="#">Дизайн</a></li>
-            <li><a href="#">Маркетинг</a></li>
-            <li><a href="#">Аналитика</a></li>
-            <li><a href="#">Контент</a></li>
-          </ul>
-        </div>
-      </div><!--contain-->
-    </section>
-    <section class="section every">
+    </div>
+    @@include('var/_header.html')
+    <div class="every">
       <div class="contain">
         <div class="every-w">
           <div class="every-col-1">
@@ -82,8 +27,8 @@
           <div class="every-btn-o-w"><a href="#" class="btn-o">Учиться</a></div>
         </div>
       </div>
-    </section>    
-    <section class="section all-sch">
+    </div>    
+    <section class="all-sch">
       <div class="contain">
         <div class="all-sch-w row10">
           <div class="col-33-10 all-sch-col">
@@ -257,7 +202,7 @@
         <div class="contain">
           <h2>Отзывы</h2>
           <div class="rev-w row20">
-            <div class="col-33-20">
+            <div class="rev-col col-33-20">
              @@include('var/_rev.html',{
               "title":"Java. Уровень 1",
               "name":"Михаил Морозов",
@@ -266,7 +211,7 @@
               "more": "Подробнее"
             })
           </div>
-          <div class="col-33-20">
+          <div class="rev-col col-33-20">
            @@include('var/_rev.html',{
             "title":"Программирование на языке C++",
             "name":"Стройнов Илья",
@@ -275,7 +220,7 @@
             "more": ""
           })
         </div>
-        <div class="col-33-20">
+        <div class="rev-col col-33-20">
          @@include('var/_rev.html',{
           "title":"Основы Python",
           "name":"Стройнов Илья",
@@ -293,47 +238,7 @@
 
 
 
-<footer class="foot">  
-  <div class="foot-top">
-    <div class="contain">
-      <div class="foot-top-w">
-        <div class="foot-col-1">
-          <a href="#" class="foot-logo">Free Tutorials</a>
-          <ul class="foot-ul">
-            <li><a href="#">О проекте</a></li>
-            <li><a href="#">Условия использования</a></li>
-          </ul>
-        </div>
-        <div class="foot-col-2">
-          <ul class="foot-ul">
-            <li><a href="#">Курсы</a></li>
-            <li><a href="#">Публикации</a></li>
-            <li><a href="#">Онлайн школы</a></li>
-          </ul>
-        </div>
-        <div class="foot-col-3">
-          <ul class="foot-ul">
-            <li><a href="#">Добавить свой курс</a></li>
-            <li><a href="#">Карта сайта</a></li>
-            <li><a href="#">Политика конфендициальности</a></li>
-          </ul>
-        </div>
-        <div class="foot-col-4">
-          <ul class="foot-ul">
-            <li>Количество курсов <a class="blue" href="#">640</a></li>
-            <li>Количество школ <a class="blue" href="#">120</a></li>
-            <li>Отзывы <a class="blue" href="#">28</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="foot-dow">
-    <div class="contain"><div class="foot-dow-txt">Информация о курсах собрана из открытых источниках и не является публичной офертой</div></div>
-  </div>
-
-
-</footer>
+@@include('var/_footer.html')
 
 <div class="modal-overlay modal-overlay_1">  
  <div class="modal-form__layout"></div>
@@ -351,6 +256,7 @@
 </div><!--wrapper-->
 
 <script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/select2.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>
