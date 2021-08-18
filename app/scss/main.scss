@@ -368,6 +368,7 @@ input[type="text"].form-search {
         svg {
           fill: #fff;
           color: #FFF;
+          opacity: 1;
         }
       }
       &.act {
@@ -391,6 +392,9 @@ input[type="text"].form-search {
   }
 }
 
+.icon-pass {
+  opacity: 0.5;  
+}
 
 .categ-menu-w {
   background: rgb(248, 250, 251);  
@@ -1400,6 +1404,169 @@ table {
     margin-top: 83px;
   }
 }
+
+.rev2 {
+  h2 {
+    text-align: left;    
+  }
+  .rev-it {
+    margin-bottom: 103px;
+  }
+
+}
+
+.rev-pagin-w {
+  display: flex;
+  margin-top: -53px;
+  .pagin {
+     ul {
+      margin: 0 -12.5px;
+       li {
+         margin: 0 12.5px;
+       }
+     }
+  }
+}
+
+.rev-butt-w2 {
+  margin-top: 64px;
+}
+
+.all-cours2 {
+  .all-cours-it {
+    margin-bottom: 0;
+  }
+}
+
+.all-cours2-btn-w {
+  margin-top: 45px;
+}
+
+
+ul.schcat-tabs {
+  margin: 0 -16px;  
+  margin-top: 38px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: calc(100% - 32px);
+    height: 1px;
+    background-color: #CFD9E0;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    
+  }
+  li {
+    margin: 0 16px;    
+    a {
+      font-weight: 600;
+      color: #222;
+      padding: 13px 0;
+      &:hover {
+        text-decoration: none;
+        color: $link;
+        border-bottom: 2px solid $link;
+      }
+    }
+    &.active {
+      a {
+        color: $link;
+        border-color: $link;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.school {
+  margin-top: 29px;
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    max-width: 810px;
+    width: 100%;
+  }
+}
+
+.school-w {
+  background: rgb(248, 250, 251);
+  border-radius: 10px;
+  padding: 37px 35px 28px;
+}
+
+.school-row {
+  display: flex;  
+  margin-bottom: 24px;
+}
+
+.school-img-w {
+  width: 110px;
+  height: 110px;
+  background: url("../img/image.png");
+  border-radius: 10px;
+  margin-right: 24px;
+  flex: 0 0 auto;
+}
+
+.school-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.school-r {
+  width: 50%;
+  flex: 1 1 auto;
+  margin-top: -4px;
+}
+
+.school h1 {
+  font-weight: 600;
+  font-size: 36px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 13px;
+}
+
+.school-a {
+  font-size: 16px;
+  color: rgb(56, 106, 221);
+  display: block;
+}
+
+
+
+.school-stars {
+  display: flex;  
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tabs_content.schcat-tabs-content {
+  margin-top: 32px;
+}
+
+.schcat-tabs-content .tabs_content_item {
+  line-height: 1;
+}
+
+
+@media only screen and (min-width : 1200px) {
+  .rev2 {
+    margin-top: 132px;
+    .rev-w {
+      margin-top: 53px;
+    }
+  }  
+}
+
 
 @import "_mnu.scss";
 @import "_vars.scss";

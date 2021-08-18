@@ -128,7 +128,29 @@
 .pubs-section {
   margin-top: 45px;
 }
-
+.all-cours2 .all-cours-it {
+  margin-bottom: 21px;
+}
+.rev2 {  
+  .rev-it {
+  margin-bottom: 30px;
+}
+.rev-w {
+  margin-top: -20px;
+}
+} 
+.rev-pagin-w {
+  margin-top: 0;
+}
+.all-cours2-btn-w {
+  margin-top: 25px;
+}
+.tabs_content.schcat-tabs-content {
+  margin-top: 0;
+}
+.all-cours2 {
+  margin-top: 40px;
+}
 } 
 
 /* Small Devices, Tablets */
@@ -233,6 +255,16 @@
   }
   .col-l {
     width: 100%;
+  }
+  .schcat-tabs-w {   
+        overflow-x: scroll; 
+        padding-bottom: 4px;
+  }
+  ul.schcat-tabs {
+    width: 782px;
+    &:before {
+      display: none;
+    }
   }
 }      
 
@@ -416,6 +448,16 @@
   }
   .adate {
     margin-bottom: 13px;
+  }
+  .school-w {
+    padding: 27px 25px 18px;
+  }
+  .school-img-w {
+    width: 100px;
+    height: 100px;
+  }
+  .school h1 {
+    font-size: 34px;
   }
 }
 

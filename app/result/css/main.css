@@ -627,7 +627,8 @@ input[type="text"].form-search {
       background: #386add; }
       .pagin li a:hover svg {
         fill: #fff;
-        color: #FFF; }
+        color: #FFF;
+        opacity: 1; }
     .pagin li a.act {
       width: 40px;
       height: 40px;
@@ -647,6 +648,9 @@ input[type="text"].form-search {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
+
+.icon-pass {
+  opacity: 0.5; }
 
 .categ-menu-w {
   background: #f8fafb;
@@ -1567,6 +1571,132 @@ table {
   .pubs-section .pubs-w {
     margin-top: 83px; }
 
+.rev2 h2 {
+  text-align: left; }
+
+.rev2 .rev-it {
+  margin-bottom: 103px; }
+
+.rev-pagin-w {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -53px; }
+  .rev-pagin-w .pagin ul {
+    margin: 0 -12.5px; }
+    .rev-pagin-w .pagin ul li {
+      margin: 0 12.5px; }
+
+.rev-butt-w2 {
+  margin-top: 64px; }
+
+.all-cours2 .all-cours-it {
+  margin-bottom: 0; }
+
+.all-cours2-btn-w {
+  margin-top: 45px; }
+
+ul.schcat-tabs {
+  margin: 0 -16px;
+  margin-top: 38px;
+  position: relative; }
+  ul.schcat-tabs:before {
+    content: "";
+    display: block;
+    width: calc(100% - 32px);
+    height: 1px;
+    background-color: #CFD9E0;
+    position: absolute;
+    bottom: 0;
+    left: 16px; }
+  ul.schcat-tabs li {
+    margin: 0 16px; }
+    ul.schcat-tabs li a {
+      font-weight: 600;
+      color: #222;
+      padding: 13px 0; }
+      ul.schcat-tabs li a:hover {
+        text-decoration: none;
+        color: #386ADD;
+        border-bottom: 2px solid #386ADD; }
+    ul.schcat-tabs li.active a {
+      color: #386ADD;
+      border-color: #386ADD; }
+
+.school {
+  margin-top: 29px; }
+  .school p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    max-width: 810px;
+    width: 100%; }
+
+.school-w {
+  background: #f8fafb;
+  border-radius: 10px;
+  padding: 37px 35px 28px; }
+
+.school-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px; }
+
+.school-img-w {
+  width: 110px;
+  height: 110px;
+  background: url("../img/image.png");
+  border-radius: 10px;
+  margin-right: 24px;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+
+.school-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.school-r {
+  width: 50%;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-top: -4px; }
+
+.school h1 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #222222;
+  margin-bottom: 13px; }
+
+.school-a {
+  font-size: 16px;
+  color: #386add;
+  display: block; }
+
+.school-stars {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px; }
+
+.tabs_content.schcat-tabs-content {
+  margin-top: 32px; }
+
+.schcat-tabs-content .tabs_content_item {
+  line-height: 1; }
+
+@media only screen and (min-width: 1200px) {
+  .rev2 {
+    margin-top: 132px; }
+    .rev2 .rev-w {
+      margin-top: 53px; } }
+
 @media (max-width: 991px) {
   .top-mnu2 {
     display: none; }
@@ -2197,7 +2327,21 @@ input[type="text"].inputt {
   .pubs-section .pubs-w {
     margin-top: -10px; }
   .pubs-section {
-    margin-top: 45px; } }
+    margin-top: 45px; }
+  .all-cours2 .all-cours-it {
+    margin-bottom: 21px; }
+  .rev2 .rev-it {
+    margin-bottom: 30px; }
+  .rev2 .rev-w {
+    margin-top: -20px; }
+  .rev-pagin-w {
+    margin-top: 0; }
+  .all-cours2-btn-w {
+    margin-top: 25px; }
+  .tabs_content.schcat-tabs-content {
+    margin-top: 0; }
+  .all-cours2 {
+    margin-top: 40px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
@@ -2270,7 +2414,14 @@ input[type="text"].inputt {
     .table-w-w .table-w {
       width: 749px; }
   .col-l {
-    width: 100%; } }
+    width: 100%; }
+  .schcat-tabs-w {
+    overflow-x: scroll;
+    padding-bottom: 4px; }
+  ul.schcat-tabs {
+    width: 782px; }
+    ul.schcat-tabs:before {
+      display: none; } }
 
 @media only screen and (max-width: 640px) {
   .contain {
@@ -2397,7 +2548,14 @@ input[type="text"].inputt {
   .cols {
     margin-top: 49px; }
   .adate {
-    margin-bottom: 13px; } }
+    margin-bottom: 13px; }
+  .school-w {
+    padding: 27px 25px 18px; }
+  .school-img-w {
+    width: 100px;
+    height: 100px; }
+  .school h1 {
+    font-size: 34px; } }
 
 @media only screen and (max-width: 360px) {
   body, body > * {
