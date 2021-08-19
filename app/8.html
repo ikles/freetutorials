@@ -1,0 +1,87 @@
+@@include('var/_head.html',{
+  "title":"8. Карта сайта онлайн школы по алфавиту"
+})
+<body>  
+  <div class="wrapper wrapper-8">
+
+    @@include('var/_header.html')
+
+
+
+
+
+    <div class="sch-onl">
+      <div class="contain">
+        <h1>Онлайн школы</h1>
+        <div class="sch-onl-w row20">
+
+<div class="col-33-10 sch-onl-col">
+            @@include('var/_schonl_it1.html',{              
+              "course":"#tceh",              
+              "count":"2 курса"
+            })
+          </div><!--col-->
+
+          <div class="col-33-10 sch-onl-col">
+            @@include('var/_schonl_it1.html',{              
+              "course":"1C-UROKI",              
+              "count":"10 курсов"
+            })
+          </div><!--col-->
+
+          <div class="col-33-10 sch-onl-col">
+            @@include('var/_schonl_it.html',{
+              "img":"sch-onl-1.jpg",
+              "course":"4BRAIN",              
+              "count":"2 курса"
+            })
+          </div><!--col-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="pubs">
+  <div class="contain">
+
+    <h1>Онлайн школы</h1>
+
+
+  </div>
+  @@include('var/_pagin.html')                  
+</div>
+</div>
+
+
+
+@@include('var/_footer.html')
+
+<div class="modal-overlay modal-overlay_1">  
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <a href="#" class="pop-close"></a>
+    <div class="rev-it">
+
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+
+
+
+</div><!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/select2.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+
