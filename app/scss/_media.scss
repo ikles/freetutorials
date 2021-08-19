@@ -151,6 +151,9 @@
 .all-cours2 {
   margin-top: 40px;
 }
+.sch-onl-col {
+  width: 50%;
+}
 } 
 
 /* Small Devices, Tablets */
@@ -266,6 +269,19 @@
       display: none;
     }
   }
+  .sch-onl-w {
+    margin-top: 30px;
+  }
+  .sch-onl {
+    margin-top: 48px;
+  }  
+  .revsfilts-col {
+    width: 100%;
+    margin-bottom: 15px;    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }      
 
 @media only screen and (max-width : 640px) {
@@ -325,6 +341,16 @@
 }
 .pubs-section {
   margin-top: 15px;
+}
+.sch-onl-col {
+  width: 100%;
+}
+.sch-onl-it {
+  margin-bottom: 14px;
+  height: auto;
+}
+.sch-onl-it-1 {
+  padding-bottom: 23px;
 }
 } 
 
@@ -458,6 +484,12 @@
   }
   .school h1 {
     font-size: 34px;
+  }
+  .revsfiltr {
+    padding: 30px;
+  }
+  .revsfiltr-section {
+    margin-top: 50px;
   }
 }
 

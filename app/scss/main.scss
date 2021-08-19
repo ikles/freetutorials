@@ -868,6 +868,9 @@ h2 {
   .rev-name-txt-2 {
     margin-bottom: 0;
   }
+  .rev-name-txt-3 {
+    margin-left: 12px;
+  }
 }
 
 .rev-name-txt-2 {
@@ -1236,6 +1239,11 @@ h1 {
     margin-bottom: 30px;    
     padding-left: 25px;
   }
+  .pagin ul {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
   li {
     line-height: 24px;      
   }
@@ -1419,13 +1427,13 @@ table {
   display: flex;
   margin-top: -53px;
   .pagin {
-     ul {
-      margin: 0 -12.5px;
-       li {
-         margin: 0 12.5px;
-       }
-     }
-  }
+   ul {
+    margin: 0 -12.5px;
+    li {
+     margin: 0 12.5px;
+   }
+ }
+}
 }
 
 .rev-butt-w2 {
@@ -1575,6 +1583,9 @@ ul.schcat-tabs {
 
 .sch-onl {
   margin-top: 68px;
+  .pagin {
+    margin-top: 40px;
+  }
 }
 
 
@@ -1582,17 +1593,21 @@ ul.schcat-tabs {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 51px;
 }
 
 .sch-onl-it {
   width: 100%;
   background: rgb(248, 250, 251);
   border-radius: 10px;
-  padding: 22px 30px 20px;
+  padding: 22px 30px 20px 21px;
   display: flex;
   margin-bottom: 24px;
-  height: 122px;
+  height: 121px;
+}
+
+.sch-onl-it-1 {
+  padding-left: 30px;
 }
 
 .sch-onl-txt-w {
@@ -1629,11 +1644,57 @@ ul.schcat-tabs {
 
 
 .sch-onl-col {
-  
+
+}
+
+.revscont {
+  .pagin {
+    margin-top: 66px;
+  }  
+}
+.cols-revscont {
+    .col-l {
+      padding-bottom: 0;
+    }
+  }
+
+.revsfiltr-section {
+  margin-top: 80px;
+  margin-bottom: 41px;    
 }
 
 
+.revsfiltr {
+  background: #F8FAFB;
+  border-radius: 10px;
+  padding: 40px 37px;  
+  margin-top: 32px;
+}
 
+.rev-it-h {
+  margin-bottom: 48px;    
+  width: 100%;
+  .rev-view {
+    margin-bottom: 14px;
+  }
+  .rev-com-txt {
+    line-height: 1.5;
+  }
+}
+
+.rev-name-w-h {
+  margin-bottom: 14px;
+}
+
+.wrapper-10 {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+.revsfilts-w {}
+
+.form-select {}
 
 
 
