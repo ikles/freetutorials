@@ -1249,9 +1249,16 @@ h1 {
   }
 }
 .col-l {
-  flex-grow: 1;
-  padding-bottom: 136px;
+  flex-grow: 1;  
 }
+
+@media only screen and (min-width : 1200px) {
+  .wrapper-6 .col-l {
+    padding-bottom: 136px;
+  }
+}
+
+
 .col-r {
   flex: none;
   width: 271px;
@@ -1653,10 +1660,10 @@ ul.schcat-tabs {
   }  
 }
 .cols-revscont {
-    .col-l {
-      padding-bottom: 0;
-    }
+  .col-l {
+    padding-bottom: 0;
   }
+}
 
 .revsfiltr-section {
   margin-top: 80px;
@@ -1700,6 +1707,238 @@ ul.schcat-tabs {
 
 
 
+.mapsite {
+  margin-top: 64px;
+}
+
+.mapsite__all-link {
+  margin-right: 21px;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  margin-bottom: 15px;
+  &.active {
+    color: $link;
+    border-bottom: 1px solid $link;     
+  }
+}
+
+.mapsite__actions {
+  display: flex;
+  margin-bottom: 43px;  
+  flex-wrap: wrap;  
+  align-items: flex-start;
+  ul {
+    display: flex;        
+    margin-right: 32px;
+    margin-bottom: 15px;
+    li {
+      margin: 0 6px;
+      a {
+        color: #222;
+        padding-bottom: 2px;
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          color: $link;
+          border-bottom: 1px solid $link;
+          text-decoration: none;
+        }
+        &.active {
+          color: $link;
+          border-bottom: 1px solid $link;
+        }
+      }      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.mapsite__row-w {
+  margin-bottom: 51px;  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.mapsite__letter {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.mapsite__row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  &:before {
+   content: ""; 
+   display: block;
+   width: calc(100% - 40px);
+   height: 1px;
+   background-color: #E3E3E3;
+   position: absolute;
+   left: 20px;
+   top: 0;
+ }  
+}
+.mapsite__col {
+  ul {
+    li {
+      color: #777;
+      line-height: 1.4;
+      margin-bottom: 26px;
+      a {
+
+      }
+    }
+  }
+}
+
+.mapsite__pagin-w {
+  margin-top: 58px;
+}
+
+
+a.all-lett {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.about-page {
+  margin-top: 68px;
+  h1 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 23px;
+  }
+}
+
+
+@media only screen and (min-width : 1200px) {
+  .about-page {    
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+
+.qansw-section {
+  margin-top: 95px;
+}
+
+.about-btn-w {
+  margin-top: 33px;
+}
+
+.about-page__form {
+  background: #F8FAFB;
+  border-radius: 10px;
+  padding: 30px 30px 60px 30px;
+  margin-top: 65px;
+}
+
+.about-page__input {  
+}
+
+.about-page__label {
+  margin-bottom: 24px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.about-page__label-txt {
+
+}
+
+.about-page__btn-w {
+  display: flex;  
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+.accordion-container {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.accordion-item {
+  padding-bottom: 17px;
+  margin-bottom: 34px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E3E3E3;
+  padding-left: 6px;
+  padding-right: 6px;
+  &.active-header {
+    .q-ans-accordion-header-span {
+      &:after {
+        transform: rotate(90deg)
+      }
+    }    
+  }
+}
+
+.q-ans-accordion-header-span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #222222;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;  
+  align-items: center;
+  width: 100%;
+  &:after {
+    content: "";
+    display: block;
+    background: url("../img/arr-b-r.svg") $nr right center;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+
+
+.qansw-section {
+  margin-bottom: 95px;
+  .accordion-content {
+    padding-left: 6px;
+    padding-right: 6px;
+  }  
+}
+.accordion-content {
+  display: block;
+  margin-top: 17px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(34, 34, 34);  
+  margin-top: 8px;
+  width: 100% !important;
+}
+
+.q-ans-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E3E3E3;
+}
 
 
 

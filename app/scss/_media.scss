@@ -101,6 +101,9 @@
   .col-l {
     padding-bottom: 56px;
   }
+  .about-page .col-l {
+    padding-bottom: 0;
+  }
   .courses-art-col {
     width: 100%;
     .all-cours-it {
@@ -133,11 +136,11 @@
 }
 .rev2 {  
   .rev-it {
-  margin-bottom: 30px;
-}
-.rev-w {
-  margin-top: -20px;
-}
+    margin-bottom: 30px;
+  }
+  .rev-w {
+    margin-top: -20px;
+  }
 } 
 .rev-pagin-w {
   margin-top: 0;
@@ -153,6 +156,20 @@
 }
 .sch-onl-col {
   width: 50%;
+}
+
+.about-page .col-l {
+  width: 100%;
+}
+.qansw-section {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.about-page {
+  margin-top: 48px;
+}
+.about-page__form {
+  margin-top: 35px;
 }
 } 
 
@@ -260,8 +277,8 @@
     width: 100%;
   }
   .schcat-tabs-w {   
-        overflow-x: scroll; 
-        padding-bottom: 4px;
+    overflow-x: scroll; 
+    padding-bottom: 4px;
   }
   ul.schcat-tabs {
     width: 782px;
@@ -281,6 +298,27 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  .mapsite__col {
+    width: 100%;
+  }
+  .mapsite__col ul {
+    margin-bottom: 20px;
+    li {
+      margin-bottom: 20px;
+    }
+  } 
+  .mapsite__actions {
+    margin-bottom: 23px;
+  }
+  .mapsite__row-w {
+    margin-bottom: 0;
+  }
+  .mapsite {
+    margin-top: 44px;
+  }
+  .mapsite__pagin-w {
+    margin-top: 28px;
   }
 }      
 
@@ -490,6 +528,13 @@
   }
   .revsfiltr-section {
     margin-top: 50px;
+  }
+  .about-page__form {
+    padding: 25px 20px;
+    margin-top: 0;
+  }
+  .about-page {
+    margin-top: 23px;
   }
 }
 
