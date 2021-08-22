@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12. Страница добавления курса</title>  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>  
+  <div class="wrapper wrapper-12">
+
+    <header class="header">
+  <div class="contain">
+    <div class="top-w">
+      <a href="index.html" class="logo">
+        <div class="logo-txt-1">Free Tutorials</div>
+        <div class="logo-txt-2">Каталог бесплатных it-курсов</div>
+      </a>
+      <div class="top-col-3">
+        <div class="col-mnu">
+          <div class="hidden-mnu hidden-mnu1" wfd-invisible="true">
+            <a href="#" class="toggle-mnu toggle-mnu1" wfd-invisible="true"><span></span></a>
+          </div>
+          <ul class="top-mnu top-mnu1">
+            <li><a href="#">Курсы</a></li>
+            <li><a href="#">Онлайн-школы</a></li>
+            <li><a href="#">Публикации</a></li>
+            <li><a href="#">Отзывы</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="categ-menu">
+  <div class="contain">
+    <div class="categ-menu-w">
+
+      <div class="hidden-mnu hidden-mnu2" wfd-invisible="true">
+        <a href="#" class="toggle-mnu toggle-mnu2" wfd-invisible="true"><span></span></a>
+      </div>
+      <span class="show-991 cat-txt">Категории</span>
+      <ul class="categ-menu-ul top-mnu2">
+        <li><a href="#">Программирование</a></li>
+        <li><a href="#">Управление</a></li>
+        <li><a href="#">Дизайн</a></li>
+        <li><a href="#">Маркетинг</a></li>
+        <li><a href="#">Аналитика</a></li>
+        <li><a href="#">Контент</a></li>
+      </ul>
+    </div>
+  </div><!--contain-->
+</div>
+
+
+    <div class="add-page content">
+      <div class="contain">
+        <h1>Добавить свой курс</h1>
+        <p>Добавляются только бесплатные курсы для it-специальностей.</p>
+        <div class="cols-w">
+          <div class="col-l">
+
+            <form class="addform">
+              <div class="row10">
+                <div class="col-50-10">
+                 <label class="addform__label form-label">
+                  <span class="addform__label-txt form-label-txt">Имя</span>
+                  <input type="text" name="name" class="addform__input fbord form-input-46" placeholder="">
+                </label>
+              </div>
+              <div class="col-50-10">
+                <label class="addform__label form-label">
+                  <span class="addform__label-txt form-label-txt">E-mail<sup>*</sup></span>
+                  <input type="text" name="email" class="addform__input fbord form-input-46" placeholder="" required>
+                </label>
+              </div>
+            </div>
+            <label class="addform__label form-label">
+              <span class="addform__label-txt form-label-txt">Название курса<sup>*</sup></span>
+              <input type="text" name="title" class="addform__input fbord form-input-46" placeholder="" required>
+            </label>
+            <label class="addform__label form-label">
+              <span class="addform__label-txt form-label-txt">Описание</span>
+              <textarea class="addform__area" name="desc"></textarea>              
+            </label>
+
+            <div class="row10 addform__inputs2">
+              <div class="col-50-10">
+               <label class="addform__label form-label">
+                <span class="addform__label-txt form-label-txt">Продолжительность обучения (в минутах)</span>
+                <input type="text" name="name" class="addform__input2 fbord form-input-46" value="226" placeholder="">
+              </label>
+            </div>
+            <div class="col-50-10">
+              <label class="addform__label form-label">
+                <span class="addform__label-txt form-label-txt">Количество занятий</span>
+                <input type="text" name="email" class="addform__input2 fbord form-input-46" value="13" placeholder="">
+              </label>
+            </div>
+          </div>
+
+          <div class="addform__checks">
+            <label class="form-check-label">
+              <input class="form-check" name="tasks" value="Задачи и задания" type="checkbox">
+              <span></span>
+              <span>Задачи и задания</span>
+            </label>
+
+            <label class="form-check-label">
+              <input class="form-check" name="cert" value="Сертификат окончания" type="checkbox">
+              <span></span>
+              <span>Сертификат окончания</span>
+            </label>
+          </div>
+
+
+          <div class="addform_file-w">
+
+
+
+            <div class="addform_file-label-w">
+
+              <label class="addform_file-label">
+                <input size="40" accept=".jpg,.jpeg,.png" class="multi-file-input" type="file" id="fileMulti-2" aria-invalid="false">
+                <span>Загрузить обложку курса</span>
+              </label>
+              <div class="img_wrapper_2 add-comp-col-1-l-photo-w">
+
+              </div>  
+
+            </div>
+            
+<div class="addform_file-desc">Размер изображения 300х200 пикселей, не более 10 Мб.</div>
+
+
+          </div>
+
+
+          <button class="btn">Добавить</button>
+        </form>
+
+      </div>
+      <div class="col-r">
+
+      </div>
+    </div>
+  </div>   
+</div>
+
+
+<footer class="foot">  
+  <div class="foot-top">
+    <div class="contain">
+      <div class="foot-top-w">
+        <div class="foot-col-1">
+          <a href="index.html" class="foot-logo">Free Tutorials</a>
+          <ul class="foot-ul">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Условия использования</a></li>
+          </ul>
+        </div>
+        <div class="foot-col-2">
+          <ul class="foot-ul">
+            <li><a href="#">Курсы</a></li>
+            <li><a href="#">Публикации</a></li>
+            <li><a href="#">Онлайн школы</a></li>
+          </ul>
+        </div>
+        <div class="foot-col-3">
+          <ul class="foot-ul">
+            <li><a href="#">Добавить свой курс</a></li>
+            <li><a href="#">Карта сайта</a></li>
+            <li><a href="#">Политика конфендициальности</a></li>
+          </ul>
+        </div>
+        <div class="foot-col-4">
+          <ul class="foot-ul">
+            <li>Количество курсов <a class="blue" href="#">640</a></li>
+            <li>Количество школ <a class="blue" href="#">120</a></li>
+            <li>Отзывы <a class="blue" href="#">28</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-dow">
+    <div class="contain"><div class="foot-dow-txt">Информация о курсах собрана из открытых источниках и не является публичной офертой</div></div>
+  </div>
+</footer>
+
+<div class="modal-overlay modal-overlay_1">  
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <a href="#" class="pop-close"></a>
+    <div class="rev-it">
+
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+
+
+
+</div><!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/select2.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+

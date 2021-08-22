@@ -50,24 +50,63 @@ $('.eye-3').click(function (e) {
 
 /************************************/
 
-
-  
-
-
+let imgWrapper2 = document.querySelector('.img_wrapper_2');  
+let fileMulti2 = document.querySelector('#fileMulti-2');
 
 
-  $('.w-arev-com-a').click(function (e) {
-    e.preventDefault();    
-    $('.modal-overlay_1').fadeIn();
-    let content = $(this).parent().parent().html();
-    $('.modal-overlay_1 .rev-it').html("");
-    $('.modal-overlay_1 .rev-it').append(content);
-    $('body').addClass('ohi');
-  });
+function download2(input) {
+  let file = input.files[0];
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
 
-  $('.info-close').click(function () {
-    $('.info').slideUp();
-  });
+  reader.onload = function () {
+    let img = document.createElement('img');
+    img.src = reader.result;
+    let linkImg = document.createElement('span');
+    linkImg.classList.add('add-comp-col-1-l-img-w');
+    linkImg.appendChild(img);      
+    imgWrapper2.innerHTML = '';
+    imgWrapper2.classList.add('zi10');
+    imgWrapper2.appendChild(linkImg);
+    removeImg();
+  }
+}
+
+
+
+
+
+function removeImg() {
+  $('.add-comp-col-1-l-img-w').click(function (e) {
+    e.stopPropagation();
+    this.remove();
+    imgWrapper2.classList.remove('zi10');
+  });  
+}
+
+removeImg();
+
+
+if($('#fileMulti-2').length) {
+  fileMulti2.addEventListener("change", function() {
+   download2(this); 
+ });
+}
+
+
+
+$('.w-arev-com-a').click(function (e) {
+  e.preventDefault();    
+  $('.modal-overlay_1').fadeIn();
+  let content = $(this).parent().parent().html();
+  $('.modal-overlay_1 .rev-it').html("");
+  $('.modal-overlay_1 .rev-it').append(content);
+  $('body').addClass('ohi');
+});
+
+$('.info-close').click(function () {
+  $('.info').slideUp();
+});
 
 
 
@@ -117,7 +156,7 @@ $('.accordion-header').toggleClass('inactive-header');
   });
 
 
- $('.link').click(function(e) {
+  $('.link').click(function(e) {
     $('.modal-overlay_1').fadeIn();
     e.preventDefault();
     $('body').addClass('ohi');

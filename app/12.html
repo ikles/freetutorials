@@ -1,0 +1,127 @@
+@@include('var/_head.html',{
+  "title":"12. Страница добавления курса"
+})
+<body>  
+  <div class="wrapper wrapper-12">
+
+    @@include('var/_header.html')
+
+
+    <div class="add-page content">
+      <div class="contain">
+        <h1>Добавить свой курс</h1>
+        <p>Добавляются только бесплатные курсы для it-специальностей.</p>
+        <div class="cols-w">
+          <div class="col-l">
+
+            <form class="addform">
+              <div class="row10">
+                <div class="col-50-10">
+                 <label class="addform__label form-label">
+                  <span class="addform__label-txt form-label-txt">Имя</span>
+                  <input type="text" name="name" class="addform__input fbord form-input-46" placeholder="">
+                </label>
+              </div>
+              <div class="col-50-10">
+                <label class="addform__label form-label">
+                  <span class="addform__label-txt form-label-txt">E-mail<sup>*</sup></span>
+                  <input type="text" name="email" class="addform__input fbord form-input-46" placeholder="" required>
+                </label>
+              </div>
+            </div>
+            <label class="addform__label form-label">
+              <span class="addform__label-txt form-label-txt">Название курса<sup>*</sup></span>
+              <input type="text" name="title" class="addform__input fbord form-input-46" placeholder="" required>
+            </label>
+            <label class="addform__label form-label">
+              <span class="addform__label-txt form-label-txt">Описание</span>
+              <textarea class="addform__area" name="desc"></textarea>              
+            </label>
+
+            <div class="row10 addform__inputs2">
+              <div class="col-50-10">
+               <label class="addform__label form-label">
+                <span class="addform__label-txt form-label-txt">Продолжительность обучения (в минутах)</span>
+                <input type="text" name="name" class="addform__input2 fbord form-input-46" value="226" placeholder="">
+              </label>
+            </div>
+            <div class="col-50-10">
+              <label class="addform__label form-label">
+                <span class="addform__label-txt form-label-txt">Количество занятий</span>
+                <input type="text" name="email" class="addform__input2 fbord form-input-46" value="13" placeholder="">
+              </label>
+            </div>
+          </div>
+
+          <div class="addform__checks">
+            <label class="form-check-label">
+              <input class="form-check" name="tasks" value="Задачи и задания" type="checkbox">
+              <span></span>
+              <span>Задачи и задания</span>
+            </label>
+
+            <label class="form-check-label">
+              <input class="form-check" name="cert" value="Сертификат окончания" type="checkbox">
+              <span></span>
+              <span>Сертификат окончания</span>
+            </label>
+          </div>
+
+
+          <div class="addform_file-w">
+
+
+
+            <div class="addform_file-label-w">
+
+              <label class="addform_file-label">
+                <input size="40" accept=".jpg,.jpeg,.png" class="multi-file-input" type="file" id="fileMulti-2" aria-invalid="false">
+                <span>Загрузить обложку курса</span>
+              </label>
+              <div class="img_wrapper_2 add-comp-col-1-l-photo-w">
+
+              </div>  
+
+            </div>
+            
+<div class="addform_file-desc">Размер изображения 300х200 пикселей, не более 10 Мб.</div>
+
+
+          </div>
+
+
+          <button class="btn">Добавить</button>
+        </form>
+
+      </div>
+      <div class="col-r">
+
+      </div>
+    </div>
+  </div>   
+</div>
+
+
+@@include('var/_footer.html')
+
+<div class="modal-overlay modal-overlay_1">  
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <a href="#" class="pop-close"></a>
+    <div class="rev-it">
+
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+
+
+
+</div><!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/select2.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+
