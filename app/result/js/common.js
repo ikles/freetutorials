@@ -50,6 +50,8 @@ $('.eye-3').click(function (e) {
 
 /************************************/
 
+
+
 let imgWrapper2 = document.querySelector('.img_wrapper_2');  
 let fileMulti2 = document.querySelector('#fileMulti-2');
 

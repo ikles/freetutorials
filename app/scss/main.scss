@@ -1951,11 +1951,11 @@ a.all-lett {
 }
 
 @media only screen and (min-width : 1200px) {
-.add-page {
-  h1 {
- margin-bottom: 26px;   
-  }
-}  
+  .add-page {
+    h1 {
+     margin-bottom: 26px;   
+   }
+ }  
 }
 
 
@@ -2009,8 +2009,8 @@ input[type="text"].addform__input2 {
 
 .addform_file-w {
   display: flex;  
-          align-items: center;
-          margin-bottom: 60px;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .addform_file-label-w {
@@ -2038,8 +2038,8 @@ input[type="text"].addform__input2 {
   top: 0;
   left: 0;
   z-index: 9;  
-          justify-content: center;  
-          align-items: center;
+  justify-content: center;  
+  align-items: center;
   span {
     background: url("../img/add.png") $nr top center;
     display: block;
@@ -2070,7 +2070,7 @@ input[type="text"].addform__input2 {
   display: flex;  
   align-items: center;
   justify-content: center;
-background-color: #FFF;
+  background-color: #FFF;
 }
 
 span.add-comp-col-1-l-img-w {
@@ -2079,10 +2079,10 @@ span.add-comp-col-1-l-img-w {
   -webkit-align-items: center;
   align-items: center;
   justify-content: center;
-padding: 0;
-width: 100%;
-height: 100%;
-        
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
   &:after {
     content: "";
     display: block;
@@ -2095,8 +2095,8 @@ height: 100%;
     left: 0;
     background: rgba(#000, 0.5) url("../img/close-wi.svg") $nr center;
     z-index: 1;    
-            background-size: 15px;
-            transition: 0.5s;
+    background-size: 15px;
+    transition: 0.5s;
   }
   &:hover {
     cursor: pointer;
@@ -2107,6 +2107,218 @@ height: 100%;
     
   }
 }
+
+
+.partic {
+  background: rgb(248, 250, 251);
+  border-radius: 10px;
+  margin-bottom: 9px;
+  margin-top: 31px;
+}
+
+
+
+.partic-w {
+  padding: 44px 36px 45px;
+}
+
+.partic-ul {
+  display: flex;
+  margin-bottom: 10px;
+  li {
+    margin-right: 15px;
+  }
+
+  a {
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+  }
+}
+
+.partic-txt-w {
+  margin-bottom: 18px;
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .partic-txt-w {
+
+    h1 {
+      font-weight: 600;
+      font-size: 32px;
+      color: rgb(34, 34, 34);
+      margin-bottom: 21px;
+    }
+  }
+}
+
+.partic-txt-row {
+  display: flex;  
+  align-items: center;
+  margin-bottom: 45px;
+  .all-sch-star-w {
+    margin-left: unset;
+  }
+  .all-sch-txt-1 {
+    margin-left: 19px;
+  }
+  .all-cours-name {
+    margin-right: 14px;
+  }
+}
+
+.ab-course-img-w {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 31px;
+}
+
+.ab-course-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.ab-course-txt-1 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  margin-bottom: 43px;
+}
+
+.ab-course-info-txt-w {
+  display: flex;
+  margin-top: 43px;
+}
+
+.ab-course-info {
+  margin-right: 132px;
+}
+
+.ab-course-info-txt {
+  margin-bottom: 26px;
+}
+
+.ab-course-col-2 {
+}
+
+
+
+.program-w {
+  margin-top: 104px;
+  ul {
+    padding-left: 0;
+    margin-bottom: 39px;
+  }
+  li {
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding-bottom: 13px;
+    margin-bottom: 23px;
+    font-size: 16px;
+    color: #222222;
+  }
+}
+
+
+.addrev {
+
+}
+.addrev__form {
+  padding: 30px;
+  padding-bottom: 65px;
+  background: #F8FAFB;
+  border-radius: 10px;
+  margin-top: 36px;
+}
+.addrev__label {
+  margin-bottom: 24px;
+}
+
+.addrev__label-txt {
+
+}
+.addrev__input {
+
+}
+.addrev__btn-w {
+  display: flex;
+  margin-top: 29px;  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row15 {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;  
+
+}
+
+.col-53-15 {
+  width: 53%;  
+  padding: 0 15px;
+}
+
+.col-47-15 {
+  width: 47%;  
+  padding: 0 15px;
+}
+
+.star-rating {  
+  input ~ label {
+    background: url("../img/addstar.svg") $nr 0 0;
+    width: 25px;
+    height: 25px;    
+  }
+}
+
+
+
+.star-rating {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  height: 56px;  
+          align-items: center;
+  input {
+    display: none; 
+    &:checked ~ label {      
+      background: url("../img/addstar2.svg") $nr 0 0;
+    }    
+  }    
+  .star2 {
+    display: block;
+    padding: 2px;
+    cursor: pointer;
+    transition: color .2s ease;
+    margin-left: 8px;
+    &:last-child {
+      margin-left: 0;
+    }
+    &:hover {
+      background: url("../img/addstar2.svg") $nr 0 0;
+      ~ label {
+        background: url("../img/addstar2.svg") $nr 0 0;
+      }
+    }
+  }
+}
+  
+    
+.addrev-revs {
+  margin-top: 43px;
+  margin-bottom: 42px;
+}
+    
+      
+    
+
+
+
 
 @import "_mnu.scss";
 @import "_vars.scss";
