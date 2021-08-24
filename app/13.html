@@ -22,7 +22,7 @@
               <p>Курс предназначен для тех, кто хочет приобрести начальные навыки веб-разработки на PHP, изучить логику работы с этим языком и терминологию, а также понять принципы функционирования систем и веб-приложений.</p>
             </div>
             <div class="partic-txt-row">                                          
-              <a href="#" class="all-cours-name">GeekBrains</a>
+              <a href="#" class="all-cours-name">Skillbox</a>
               <div class="all-sch-star-w">
                 <div class="all-sch-txt-star">4,5</div>
                 <div class="all-sch-stars">
@@ -35,7 +35,9 @@
               </div>
               <div class="all-sch-txt-1">28 отзывов</div>
             </div>
-            <a href="#" class="btn">Принять участие</a>
+            <div class="partic-btn-w">
+              <a href="#" class="btn">Принять участие</a>
+            </div>
           </div>          
         </div>
 
@@ -54,7 +56,7 @@
               Google, NASA, W3C.</p>
               <div class="ab-course-info-txt-w">
                 <div class="ab-course-info">
-                  <div class="ab-course-info-txt"><strong>Жирный</strong> 13</div>
+                  <div class="ab-course-info-txt"><strong>Количество занятий:</strong> 13</div>
                   <div class="ab-course-info-txt"><strong>Длительность занятий в минутах:</strong> 140</div>
                   <div class="ab-course-info-txt"><strong>Сертификат об окончании:</strong> <img src="img/close-r.svg" /></div>
                 </div>
@@ -95,13 +97,13 @@
               <h2>Отзывы</h2>
               <form class="addrev__form">
                 <div class="row15">
-                  <div class="col-53-15">
+                  <div class="col-62-15">
                     <label class="addrev__label form-label">
                       <span class="addrev__label-txt form-label-txt">Имя</span>
                       <input type="text" class="fbord form-input-56 addrev__input" placeholder="">
                     </label>
                   </div>
-                  <div class="col-47-15">
+                  <div class="col-58-15">
                     <div class="addrev__label form-label">
                       <span class="addrev__label-txt form-label-txt">Оценка</span>
                       <div class="star-rating">
@@ -159,9 +161,46 @@
 
             </div>
 
+
+
           </div>
           <div class="col-r">
 
+          </div>
+        </div>
+        <div class="other-courses">
+          <h2>Другие курсы</h2>
+          <div class="other-courses-w row10">
+            <div class="col-33-10">
+              @@include('var/_teaser2.html',{
+                "title":"Видеокурс",
+                "course":"Веб-разработка. Быстрый старт.",
+                "school":"GeekBrains",
+                "less":"13 занятий",
+                "hour":"23 часа",
+                "cat":"Создание сайтов, Web-разработка"
+              })
+            </div>
+            <div class="col-33-10">
+              @@include('var/_teaser2.html',{
+                "title":"Видеокурс",
+                "course":"Программирование на языке C++",
+                "school":"GeekBrains",
+                "less":"13 занятий",
+                "hour":"23 часа",
+                "cat":"Разработка на C++"
+              })
+            </div>
+            <div class="col-33-10">
+              @@include('var/_teaser2.html',{
+                "title":"Видеокурс",
+                "course":"Основы Python",
+                "school":"GeekBrains",
+                "less":"13 занятий",
+                "hour":"23 часа",
+                "cat":"Python-разработка"
+              })
+            </div>
           </div>
         </div>
       </div>   

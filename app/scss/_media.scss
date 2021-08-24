@@ -32,6 +32,24 @@
   .fliter-section {
     margin-top: 31px;
   }
+  .ab-course-info-txt {
+    line-height: 1.4;
+  }
+  .ab-course-info-txt-w {
+
+    justify-content: space-between;
+  }
+  .ab-course-info {
+    margin-right: 0;
+  }
+  .ab-course-info,
+  .ab-course-col-2 {
+    width: calc(50% - 5px);
+  }
+  .all-cours3,
+  .all-cours4 {
+    margin-top: 0px;
+  }
 }
 
 
@@ -170,6 +188,27 @@
 }
 .about-page__form {
   margin-top: 35px;
+}
+.other-courses-w {
+  .col-33-10 {
+    width: 100%;
+  }
+  .all-cours-it {
+    margin-bottom: 25px;
+    height: auto;
+  }
+  .all-cours-partic {
+    margin-top: 25px;
+  }
+}
+.other-courses,
+.addrev,
+.program-w {
+  margin-top: 0;
+}
+.onl.fixed {
+  position: static;
+  max-width: 100%;
 }
 } 
 
@@ -329,9 +368,46 @@
   .addform__inputs2 {
     margin-top: 0;
   }
-
-}      
-
+  .ab-course-info, .ab-course-col-2 {
+    width: 100%;
+  }
+  .ab-course-info-txt-w {  
+    flex-wrap: wrap;
+  }
+  .addrev__form {
+    margin-top: 10px;
+  }
+  .col-62-15 {
+    width: 100%;
+  }
+  .row15 {
+    flex-wrap: wrap;
+  }      
+  .star-rating {
+    height: auto;
+  }
+  .addrev__form {
+    padding-bottom: 30px;
+  }
+  .other-courses h2 {
+    font-size: 26px;
+  }
+  .addrev__btn-w {    
+    flex-wrap: wrap;
+    .form-check-label {
+      margin-bottom: 35px;
+    }
+  }
+  .partic-w {
+    padding: 30px 20px;
+  }
+  .ab-course-w {
+    margin-top: 0;
+  }
+  .addrev__form {
+    padding: 20px;
+  }
+}
 @media only screen and (max-width : 640px) {
   .contain {
     max-width: 530px;
@@ -436,13 +512,46 @@
     padding: 18px;
   }
   .addform__checks {    
-            flex-wrap: wrap;
-            margin-bottom: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
   }
   .addform__checks label {
     width: 100%;
     margin-right: 0;
     margin-bottom: 25px;
+  }
+  .partic-ul {    
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    li {
+      margin-bottom: 14px;              
+      &:last-child {
+        margin-bottom: 14px !important;
+      }
+    }
+  }
+  .partic-txt-row {
+    flex-wrap: wrap;
+  }
+  .partic-txt-row .all-sch-txt-1 {
+    margin-top: 19px;
+    margin-left: 0;
+  }
+  .ab-course-info-txt {
+    margin-bottom: 24px;
+  }
+
+  .addrev__btn-w {
+    .form-check-label {    
+      align-items: flex-start;
+      span {
+        line-height: 1.3;
+      }
+    }
+  }
+  .all-cours3,
+  .all-cours4 {
+    margin-top: 0px;
   }
 }
 
@@ -576,20 +685,26 @@
    .col-50-10 {
      width: 100%;
    } 
+ }
+ .addform_file-desc {
+  font-size: 12px;
+}
+.addform {
+  margin-top: 16px;
+}
+.addform_file-label span {
+  font-size: 13px;
+  line-height: 1.3;
+}
+.addform_file-w {
+  margin-bottom: 50px;
+}
+.addrev__label {
+  margin-bottom: 20px;
+  .form-label-txt {
+    margin-bottom: 7px;
   }
-  .addform_file-desc {
-    font-size: 12px;
-  }
-  .addform {
-    margin-top: 16px;
-  }
-  .addform_file-label span {
-    font-size: 13px;
-    line-height: 1.3;
-  }
-  .addform_file-w {
-    margin-bottom: 50px;
-  }
+}
 }
 
 @media only screen and (max-width : 375px) {
