@@ -808,7 +808,8 @@ input[type="text"].form-search {
   margin-top: 65px;
 }
 
-h2 {
+h2,
+.h2 {
   font-weight: 600;
   font-size: 32px;
   line-height: 30px;
@@ -1131,6 +1132,13 @@ h1 {
   flex: none;
 }
 
+.all-cours6,
+.courses-art {
+  .all-cours-it {
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (min-width : 1200px) {
   .wrapper-3 {
     .foot {
@@ -1217,8 +1225,10 @@ h1 {
 }
 
 .tblock {
-  h2 {
+  h2,
+  .h2 {
     text-align: left;    
+    
   }
 }
 
@@ -1428,7 +1438,8 @@ table {
 }
 
 .rev2 {
-  h2 {
+  h2,
+  .h2 {
     text-align: left;    
   }
   .rev-it {
@@ -1456,7 +1467,7 @@ table {
 
 .all-cours2 {
   .all-cours-it {
-    margin-bottom: 0;
+    
   }
 }
 
@@ -1726,7 +1737,8 @@ ul.schcat-tabs {
   margin-bottom: 15px;
   &.active {
     color: $link;
-    border-bottom: 1px solid $link;     
+    border-bottom: 1px solid $link;  
+    text-decoration: none;   
   }
 }
 
@@ -2243,7 +2255,7 @@ span.add-comp-col-1-l-img-w {
 
 
 .addrev {
-margin-top: 136px;
+  margin-top: 136px;
 }
 .addrev__form {
   padding: 28px 30px 30px 30px;
@@ -2300,7 +2312,7 @@ margin-top: 136px;
   display: inline-flex;
   flex-direction: row-reverse;
   height: 56px;  
-          align-items: center;
+  align-items: center;
   input {
     display: none; 
     &:checked ~ label {      
@@ -2324,21 +2336,21 @@ margin-top: 136px;
     }
   }
 }
-  
-    
+
+
 .addrev-revs {
   margin-top: 43px;
   margin-bottom: 42px;
 }
-    
+
 @media only screen and (min-width : 1200px) {    
-.course-page {
-  h2 {
-    font-size: 32px;
-  }
-}      
+  .course-page {
+    h2 {
+      font-size: 32px;
+    }
+  }      
 }
-    
+
 .other-courses {
   margin-top: 136px;
   h2 {

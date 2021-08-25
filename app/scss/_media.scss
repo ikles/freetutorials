@@ -194,7 +194,7 @@
     width: 100%;
   }
   .all-cours-it {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
     height: auto;
   }
   .all-cours-partic {
@@ -210,7 +210,12 @@
   position: static;
   max-width: 100%;
 }
+.courses-art {
+  .all-cours-it {
+    margin-bottom: 21px;
+  }
 } 
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
@@ -418,7 +423,8 @@
   .public-span-1 {
     font-size: 17px;
   }
-  h2 {
+  h2,
+  .h2 {
     margin-bottom: 41px;
   }
   .rev-w {
@@ -459,7 +465,8 @@
 .cols-w h2 {
   margin-top: 31px;
 }
-.tblock h2 {
+.tblock h2,
+.tblock .h2 {
   font-size: 25px;
   margin-bottom: 29px;
 }
@@ -552,6 +559,9 @@
   .all-cours3,
   .all-cours4 {
     margin-top: 0px;
+  }
+  .pubs-section {
+    margin-top: 10px;
   }
 }
 
@@ -717,6 +727,3 @@
     min-width: 360px;
   }
 }
-
-
-
